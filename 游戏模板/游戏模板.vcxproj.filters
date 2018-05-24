@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\场景">
+      <UniqueIdentifier>{4c930897-c377-4a6b-8c38-8011ae619f35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\控件">
+      <UniqueIdentifier>{e7762809-bf2e-4f3b-818a-d3e7ddb8068a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\颜色">
+      <UniqueIdentifier>{5b5e6527-9fa1-43aa-84fe-513508da16cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\坐标">
+      <UniqueIdentifier>{fedf7058-9779-4d07-b0c9-adc3517f6167}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\文字">
+      <UniqueIdentifier>{dd1d9cea-6b08-48b5-9108-1a914e1b8210}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\物体">
+      <UniqueIdentifier>{cf8d5a4e-4c6f-483d-b1c4-183b4c46e0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\全局数据">
+      <UniqueIdentifier>{4a25b8bc-140a-4311-9133-3b47202fdcb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\myOpenGL">
+      <UniqueIdentifier>{8ebd65fa-dc54-49ce-83d6-35cc68138903}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\场景\游戏场景">
+      <UniqueIdentifier>{2a68454e-4b98-49c3-a368-9e142e86c3d6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="源.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>源文件\场景</Filter>
+    </ClCompile>
+    <ClCompile Include="Control.cpp">
+      <Filter>源文件\控件</Filter>
+    </ClCompile>
+    <ClCompile Include="Color.cpp">
+      <Filter>源文件\颜色</Filter>
+    </ClCompile>
+    <ClCompile Include="Vec.cpp">
+      <Filter>源文件\坐标</Filter>
+    </ClCompile>
+    <ClCompile Include="drawCNstring.cpp">
+      <Filter>源文件\文字</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>源文件\物体</Filter>
+    </ClCompile>
+    <ClCompile Include="全局数据.cpp">
+      <Filter>源文件\全局数据</Filter>
+    </ClCompile>
+    <ClCompile Include="myOpenGL.cpp">
+      <Filter>源文件\myOpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene_Game.cpp">
+      <Filter>源文件\场景\游戏场景</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scene.h">
+      <Filter>源文件\场景</Filter>
+    </ClInclude>
+    <ClInclude Include="Control.h">
+      <Filter>源文件\控件</Filter>
+    </ClInclude>
+    <ClInclude Include="Color.h">
+      <Filter>源文件\颜色</Filter>
+    </ClInclude>
+    <ClInclude Include="Vec.h">
+      <Filter>源文件\坐标</Filter>
+    </ClInclude>
+    <ClInclude Include="drawCNstring.h">
+      <Filter>源文件\文字</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>源文件\物体</Filter>
+    </ClInclude>
+    <ClInclude Include="全局数据.h">
+      <Filter>源文件\全局数据</Filter>
+    </ClInclude>
+    <ClInclude Include="myOpenGL.h">
+      <Filter>源文件\myOpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene_Game.h">
+      <Filter>源文件\场景\游戏场景</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
