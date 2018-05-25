@@ -40,6 +40,9 @@
     <Filter Include="源文件\场景\游戏场景">
       <UniqueIdentifier>{2a68454e-4b98-49c3-a368-9e142e86c3d6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\物体\相机">
+      <UniqueIdentifier>{467527e7-5aa2-40df-823d-de6fa811ae34}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -72,6 +75,9 @@
     <ClCompile Include="Scene_Game.cpp">
       <Filter>源文件\场景\游戏场景</Filter>
     </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\物体\相机</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -100,6 +106,9 @@
     </ClInclude>
     <ClInclude Include="Scene_Game.h">
       <Filter>源文件\场景\游戏场景</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>源文件\物体\相机</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -4,7 +4,8 @@
 
 Scene_Game::Scene_Game()
 {
-	//objectlist.push_back(new Object());
+	addObject(Object());
+	addObject(Camera());
 }
 
 

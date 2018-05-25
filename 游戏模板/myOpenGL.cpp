@@ -81,7 +81,8 @@ int myOpenGLmain(int argc, char * argv[])
 	glutMotionFunc(&mouseMove);
 	//未按下按键时的鼠标位置
 	glutPassiveMotionFunc(processMousePassiveMotion);
-	start();
+	if (scene == 0)
+		return 1;
 	glutMainLoop();
 	return 0;
 }

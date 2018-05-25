@@ -1,12 +1,13 @@
 #pragma once
 #include <iostream>
 #include <gl/glut.h>
+#include <math.h>
 using namespace std;
 class Vec
 {
 public:
 	//按坐标的构造函数
-	Vec(double x = 0, double y = 0, double z = 0);
+	explicit Vec(double x = 0, double y = 0, double z = 0);
 	double getX() const;
 	double getY() const;
 	double getZ() const;
@@ -28,8 +29,13 @@ Vec operator-(const Vec& a);
 Vec operator-(const Vec& a, const Vec& b);
 // 点积运算
 double operator*(const Vec& a, const Vec& b);
+// 数乘向量
+Vec operator*(const Vec& a, const double& b);
+Vec operator*(const double& a, const Vec& b);
 // 叉积运算
 Vec cross(const Vec& a, const Vec& b);
+// 模长
+double length(const Vec& a);
 
 
 //测试文件

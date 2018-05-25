@@ -76,11 +76,27 @@ double operator*(const Vec & a, const Vec & b)
 		+ a.getZ()*b.getZ();
 }
 
+Vec operator*(const Vec & a, const double & b)
+{
+	return Vec(a.getX()*b, a.getY()*b, a.getZ()*b);
+}
+
+Vec operator*(const double & a, const Vec & b)
+{
+	return b*a;
+}
+
+
 Vec cross(const Vec & a, const Vec & b)
 {
 	return Vec(a.getY()*b.getZ() - a.getZ()*b.getY(),
 			   a.getZ()*b.getX() - a.getX()*b.getZ(),
 			   a.getX()*b.getY() - a.getY()*b.getX());
+}
+
+double length(const Vec & a)
+{
+	return sqrt(a*a);
 }
 
 
