@@ -32,3 +32,8 @@ void Camera::display()
 {
 }
 
+Object * Camera::clone()
+{
+	return new Camera(*this);
+}
+

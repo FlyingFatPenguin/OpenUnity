@@ -59,9 +59,9 @@ void Scene::keyEvent(unsigned char key, int x, int y)
 {
 }
 
-void Scene::addObject(Object obj)
+void Scene::addObject(Object* obj)
 {
 	// 使用复制构造函数生成一个新对象
 	// 不允许直接的指针传入避免外界持有内部对象的指针
-	objectlist.push_back(new Object(obj));
+	objectlist.push_back(obj->clone());
 }

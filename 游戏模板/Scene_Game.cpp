@@ -4,8 +4,11 @@
 
 Scene_Game::Scene_Game()
 {
-	addObject(Object());
-	addObject(Camera());
+	addObject(&Object());
+	Camera c;
+	c.setPos(Vec(1, -1, 0));
+	c.setUpper(Vec(0, 0, 1));
+	addObject(&c);
 }
 
 

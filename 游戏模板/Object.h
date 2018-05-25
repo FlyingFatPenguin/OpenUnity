@@ -5,13 +5,18 @@ class Object
 public:
 	Object();
 	~Object();
-	void display();
-	void idle();
-	void changeSize(int width, int height);
-	void mouseCB(int button, int state, int x, int y);
-	void keyEvent(unsigned char key, int x, int y);
+	virtual void display();
+	virtual void idle();
+	virtual void changeSize(int width, int height);
+	virtual void mouseCB(int button, int state, int x, int y);
+	virtual void keyEvent(unsigned char key, int x, int y);
 	// 对于特殊功能的物体启动特殊功能
-	void use();
+	virtual void use();
+	// 返回一个类型一致的指针
+	virtual Object* clone();
+	virtual int setPos(Vec pos);
+	virtual int setForward(Vec forward);
+	virtual int setUpper(Vec upper);
 protected:
 	void translation_rotation();
 	Vec pos;//位置

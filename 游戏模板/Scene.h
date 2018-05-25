@@ -16,7 +16,7 @@ public:
 	void changeSize(int width, int height);
 	void mouseCB(int button, int state, int x, int y);
 	void keyEvent(unsigned char key, int x, int y);
-	void addObject(Object obj);
+	void addObject(Object* obj);
 protected:
 	// 物品列表
 	list<Object*> objectlist;

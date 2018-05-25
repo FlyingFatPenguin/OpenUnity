@@ -7,11 +7,5 @@ int main(int argc, char * argv[])
 	myOpenGLmain(argc, argv);
 	delete scene;
 
-	/*Object* obj = new Camera();
-	cout << typeid(obj).name() << endl;
-	if (typeid(obj) == typeid(Camera))
-		cout << "yes" << endl;
-	else
-		cout << "no" << endl;
-	system("pause");*/
+	
 }

@@ -37,6 +37,29 @@ void Object::use()
 {
 }
 
+Object * Object::clone()
+{
+	return new Object(*this);
+}
+
+int Object::setPos(Vec pos)
+{
+	this->pos = pos;
+	return 0;
+}
+
+int Object::setForward(Vec forward)
+{
+	this->forward = forward;
+	return 0;
+}
+
+int Object::setUpper(Vec upper)
+{
+	this->upper = upper;
+	return 0;
+}
+
 void Object::translation_rotation()
 {
 	glTranslatef(pos.getX(),pos.getY(),pos.getZ());

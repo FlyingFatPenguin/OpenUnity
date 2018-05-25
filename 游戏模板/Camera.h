@@ -10,6 +10,7 @@ public:
 	void use();
 	// ÷ÿ‘ÿdisplay
 	void display();
+	virtual Object* clone();
 private:
 	double fovy;
 	double aspect;
