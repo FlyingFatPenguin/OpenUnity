@@ -7,9 +7,6 @@ public:
 	void use();
 	~Color();
 private:
-	double r;
-	double g;
-	double b;
-	double a;
+	double rgba[4];
 };
 

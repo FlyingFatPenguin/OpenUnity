@@ -13,7 +13,9 @@ Object::~Object()
 
 void Object::display()
 {
-	glColor3f(1, 0, 0);
+	glColor3f(0.2, 0.7, 0.3);
+	glutSolidCube(0.5);
+	glColor3f(0, 0, 0);
 	glutWireCube(0.5);
 }
 
