@@ -1,6 +1,6 @@
 #include "Color.h"
 
-Color::Color(double r, double g, double b, double a)
+Color::Color(GLfloat r, GLfloat g, GLfloat b, GLfloat a)
 {
 	 rgba[0] = r;
 	 rgba[1] = g;
@@ -14,6 +14,11 @@ void Color::use()
 			  rgba[1],
 	          rgba[2],
 	          rgba[3]);
+}
+
+void Color::Material(GLenum face, GLenum pname)
+{
+	glMaterialfv(face, pname, rgba);
 }
 
 Color::~Color()

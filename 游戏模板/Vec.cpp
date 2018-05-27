@@ -6,7 +6,7 @@
 //{
 //}
 
-Vec::Vec(double x, double y, double z)
+Vec::Vec(GLfloat x, GLfloat y, GLfloat z)
 {
 	this->x = x;
 	this->y = y;
@@ -14,18 +14,18 @@ Vec::Vec(double x, double y, double z)
 }
 
 
-double Vec::getX() const
+GLfloat Vec::getX() const
 {
 	return x;
 }
 
 
-double Vec::getY() const
+GLfloat Vec::getY() const
 {
 	return y;
 }
 
-double Vec::getZ() const
+GLfloat Vec::getZ() const
 {
 	return z;
 }
@@ -69,19 +69,19 @@ Vec operator-(const Vec & a, const Vec & b)
 	return Vec(a+(-b));
 }
 
-double operator*(const Vec & a, const Vec & b)
+GLfloat operator*(const Vec & a, const Vec & b)
 {
 	return a.getX()*b.getX()
 		+ a.getY()*b.getY()
 		+ a.getZ()*b.getZ();
 }
 
-Vec operator*(const Vec & a, const double & b)
+Vec operator*(const Vec & a, const GLfloat & b)
 {
 	return Vec(a.getX()*b, a.getY()*b, a.getZ()*b);
 }
 
-Vec operator*(const double & a, const Vec & b)
+Vec operator*(const GLfloat & a, const Vec & b)
 {
 	return b*a;
 }
@@ -94,7 +94,7 @@ Vec cross(const Vec & a, const Vec & b)
 			   a.getX()*b.getY() - a.getY()*b.getX());
 }
 
-double length(const Vec & a)
+GLfloat length(const Vec & a)
 {
 	return sqrt(a*a);
 }

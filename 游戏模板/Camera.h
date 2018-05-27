@@ -12,10 +12,10 @@ public:
 	void display();
 	virtual Object* clone();
 private:
-	double fovy;
-	double aspect;
-	double zNear;
-	double zFar;
+	GLfloat fovy;
+	GLfloat aspect;
+	GLfloat zNear;
+	GLfloat zFar;
 
 };
 

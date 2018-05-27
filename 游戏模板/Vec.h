@@ -7,18 +7,17 @@ class Vec
 {
 public:
 	//按坐标的构造函数
-	explicit Vec(double x = 0, double y = 0, double z = 0);
-	double getX() const;
-	double getY() const;
-	double getZ() const;
+	explicit Vec(GLfloat x = 0, GLfloat y = 0, GLfloat z = 0);
+	GLfloat getX() const;
+	GLfloat getY() const;
+	GLfloat getZ() const;
 	void use();
 	//void display();
 	~Vec();
 private:
-	double x;
-	double y;
-	double z;
-
+	GLfloat x;
+	GLfloat y;
+	GLfloat z;
 };
 
 // 按x=1,y=2,z=3格式输出
@@ -28,14 +27,14 @@ Vec operator+(const Vec& a, const Vec& b);
 Vec operator-(const Vec& a);
 Vec operator-(const Vec& a, const Vec& b);
 // 点积运算
-double operator*(const Vec& a, const Vec& b);
+GLfloat operator*(const Vec& a, const Vec& b);
 // 数乘向量
-Vec operator*(const Vec& a, const double& b);
-Vec operator*(const double& a, const Vec& b);
+Vec operator*(const Vec& a, const GLfloat& b);
+Vec operator*(const GLfloat& a, const Vec& b);
 // 叉积运算
 Vec cross(const Vec& a, const Vec& b);
 // 模长
-double length(const Vec& a);
+GLfloat length(const Vec& a);
 
 
 //测试文件

@@ -29,8 +29,8 @@ void ChangeSize(int width, int height)//获知窗口大小
 void mouseCB(int button, int state, int wx, int wy)
 {
 	//转化为OpenGL坐标
-	/*double x = (2.0 * wx)/WIN_WIDTH - 1;
-	double y = -(2.0 * wy)/WIN_HEIGHT + 1;*/
+	/*GLfloat x = (2.0 * wx)/WIN_WIDTH - 1;
+	GLfloat y = -(2.0 * wy)/WIN_HEIGHT + 1;*/
 
 	scene->mouseCB(button, state, wx, wy);
 }
