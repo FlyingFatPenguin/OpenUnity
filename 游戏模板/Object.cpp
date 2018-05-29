@@ -19,6 +19,10 @@ void Object::display()
 	glutWireCube(0.5);
 }
 
+void Object::display2()
+{
+}
+
 void Object::idle()
 {
 }

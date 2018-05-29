@@ -16,10 +16,25 @@ void Color::use()
 	          rgba[3]);
 }
 
-void Color::Material(GLenum face, GLenum pname)
+void Color::material(GLenum face, GLenum pname)
 {
 	glMaterialfv(face, pname, rgba);
 }
+
+void Color::light(GLenum face, GLenum pname)
+{
+	glMaterialfv(GL_FRONT, GL_DIFFUSE, rgba);
+}
+
+void Color::setRGBA(GLfloat r, GLfloat g, GLfloat b, GLfloat a)
+{
+	rgba[0] = r;
+	rgba[1] = g;
+	rgba[2] = b;
+	rgba[3] = a;
+}
+
+
 
 Color::~Color()
 {

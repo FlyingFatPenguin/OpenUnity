@@ -43,6 +43,18 @@
     <Filter Include="源文件\物体\相机">
       <UniqueIdentifier>{467527e7-5aa2-40df-823d-de6fa811ae34}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\材质">
+      <UniqueIdentifier>{6870f13f-c1f9-4570-9fe6-2a6064584728}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\光照">
+      <UniqueIdentifier>{c468247b-79fd-450b-a8d2-d4daa75b81a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\全局函数">
+      <UniqueIdentifier>{7ddfc82f-83db-4e6f-8d40-d99995cb5a29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\物体\光源">
+      <UniqueIdentifier>{71d45518-c5e2-430d-8138-21f9d1e14d85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -78,6 +90,18 @@
     <ClCompile Include="Camera.cpp">
       <Filter>源文件\物体\相机</Filter>
     </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>源文件\材质</Filter>
+    </ClCompile>
+    <ClCompile Include="Light.cpp">
+      <Filter>源文件\光照</Filter>
+    </ClCompile>
+    <ClCompile Include="myfunc.cpp">
+      <Filter>源文件\全局函数</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSource.cpp">
+      <Filter>源文件\物体\光源</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -109,6 +133,18 @@
     </ClInclude>
     <ClInclude Include="Camera.h">
       <Filter>源文件\物体\相机</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>源文件\材质</Filter>
+    </ClInclude>
+    <ClInclude Include="Light.h">
+      <Filter>源文件\光照</Filter>
+    </ClInclude>
+    <ClInclude Include="myfunc.h">
+      <Filter>源文件\全局函数</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSource.h">
+      <Filter>源文件\物体\光源</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

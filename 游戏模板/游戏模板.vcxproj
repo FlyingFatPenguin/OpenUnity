@@ -119,6 +119,10 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="drawCNstring.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="myfunc.cpp" />
     <ClCompile Include="myOpenGL.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Scene.cpp" />
@@ -132,6 +136,10 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="drawCNstring.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="myfunc.h" />
     <ClInclude Include="myOpenGL.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Scene.h" />

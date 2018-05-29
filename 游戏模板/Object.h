@@ -5,7 +5,10 @@ class Object
 public:
 	Object();
 	~Object();
+	// 第一次绘制
 	virtual void display();
+	// 第二次绘制方法
+	virtual void display2();
 	virtual void idle();
 	virtual void changeSize(int width, int height);
 	virtual void mouseCB(int button, int state, int x, int y);
