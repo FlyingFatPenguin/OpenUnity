@@ -55,6 +55,9 @@
     <Filter Include="源文件\物体\光源">
       <UniqueIdentifier>{71d45518-c5e2-430d-8138-21f9d1e14d85}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\物体\游戏物体">
+      <UniqueIdentifier>{4aa720f0-a000-467e-b569-223cdcc141a2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -102,6 +105,9 @@
     <ClCompile Include="LightSource.cpp">
       <Filter>源文件\物体\光源</Filter>
     </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件\物体\游戏物体</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -145,6 +151,9 @@
     </ClInclude>
     <ClInclude Include="LightSource.h">
       <Filter>源文件\物体\光源</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>源文件\物体\游戏物体</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

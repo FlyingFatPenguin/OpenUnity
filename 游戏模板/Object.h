@@ -21,7 +21,7 @@ public:
 	virtual int setForward(Vec forward);
 	virtual int setUpper(Vec upper);
 protected:
-	void translation_rotation();
+	virtual void translation_rotation();
 	Vec pos;//位置
 	Vec forward;//前向
 	Vec upper;//上方

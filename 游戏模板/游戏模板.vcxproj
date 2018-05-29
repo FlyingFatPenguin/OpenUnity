@@ -119,6 +119,7 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="drawCNstring.cpp" />
+    <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="LightSource.cpp" />
     <ClCompile Include="Material.cpp" />
@@ -136,6 +137,7 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="drawCNstring.h" />
+    <ClInclude Include="GameObject.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightSource.h" />
     <ClInclude Include="Material.h" />
