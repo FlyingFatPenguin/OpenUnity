@@ -35,6 +35,8 @@ void Vec::use()
 	glVertex3f(x,y,z);
 }
 
+
+
 //void Vec::display()
 //{
 //	return;
@@ -97,6 +99,21 @@ Vec cross(const Vec & a, const Vec & b)
 GLfloat length(const Vec & a)
 {
 	return sqrt(a*a);
+}
+
+Vec rotate(const Vec & target, const Vec & axis, GLfloat angle)
+{
+	// t在axis上的投影向量
+	Vec t_to_axis = axis * ((axis*target) / length(axis) / length(axis));
+	Vec h = cross(axis, target)*(1/length(axis));
+	h = h * sin(angle);
+	Vec w = (target-t_to_axis) * cos(angle);
+	return h+w+t_to_axis;
+}
+
+GLfloat angle(const Vec & a, const Vec & b)
+{
+	return acos(a*b/length(a)/length(b));
 }
 
 

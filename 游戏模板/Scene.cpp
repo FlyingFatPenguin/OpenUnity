@@ -27,7 +27,7 @@ void Scene::display()
 {	
 	// 使用了两次绘制的方法来解决可能出现的透明物体的问题
 	//将来还可以使用返回值对其进行优化处理
-
+	
 	// 启动物品的特殊功能
 	for (list<Object*>::iterator o = objectlist.begin(); o != objectlist.end(); o++)
 	{

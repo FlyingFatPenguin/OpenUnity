@@ -1,5 +1,6 @@
 #pragma once
 #include "Vec.h"
+#include <math.h>
 class Object
 {
 public:
@@ -21,9 +22,14 @@ public:
 	virtual int setForward(Vec forward);
 	virtual int setUpper(Vec upper);
 protected:
-	virtual void translation_rotation();
+	void rotation();
+	void translation();
 	Vec pos;//位置
 	Vec forward;//前向
 	Vec upper;//上方
+
+	//默认方向
+	const Vec default_forward;
+	const Vec default_upper;
 };
 

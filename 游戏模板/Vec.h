@@ -35,7 +35,9 @@ Vec operator*(const GLfloat& a, const Vec& b);
 Vec cross(const Vec& a, const Vec& b);
 // 模长
 GLfloat length(const Vec& a);
-
-
+// 旋转
+Vec rotate(const Vec& target, const Vec& axis, GLfloat angle);
+// 夹角
+GLfloat angle(const Vec& a,const Vec& b);
 //测试文件
 int test_vec();

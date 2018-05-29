@@ -2,8 +2,10 @@
 
 
 
-Object::Object()
+Object::Object():default_forward(1,0,0),default_upper(0,0,1)
 {
+	upper = default_upper;
+
 }
 
 
@@ -14,11 +16,14 @@ Object::~Object()
 void Object::display()
 {
 	glPushMatrix();
-	translation_rotation();
-	glColor3f(0.2, 0.7, 0.3);
-	glutSolidCube(0.5);
-	glColor3f(0, 0, 0);
-	glutWireCube(0.5);
+	{
+		translation();
+		rotation();
+		glColor3f(0.2, 0.7, 0.3);
+		glutSolidCube(0.5);
+		glColor3f(0, 0, 0);
+		glutWireCube(0.5);
+	}
 	glPopMatrix();
 }
 
@@ -69,15 +74,56 @@ int Object::setUpper(Vec upper)
 	return 0;
 }
 
-void Object::translation_rotation()
+void Object::rotation()
 {
-	glTranslatef(pos.getX(),pos.getY(),pos.getZ());
-	//// 求出方向矢量
-	//Vec u = upper - pos;
-	//Vec f = forward - pos;
+	// 旋转
+	// 求出方向矢量
+	Vec u = upper - pos;
+	Vec f = forward - pos;
 
-	//// 将u和f向量正交化
-	//// 消除u在f方向上的分量
-	//u = u - (f * u) / length(f) / length(f) * f;
-	//// 计算旋转角度
+	if (length(u) < 1e-6)
+	{
+		u = default_upper;
+		upper = u + pos;
+	}
+	if (length(f) < 1e-6)
+	{
+		f = default_forward;
+		forward = f + pos;
+	}
+
+	// 将u和f向量正交化
+	// 消除u在f方向上的分量
+	u = u - (f * u) / length(f) / length(f) * f;
+
+	// 计算旋转角度，将前向向量转成一致
+	Vec ax_f = cross(default_forward,f);
+	// 弧度
+	GLfloat angle_fr = angle(f, default_forward);
+	Vec u2;
+	if (length(ax_f) > 1e-6)
+	{
+		// 度制
+		GLfloat angle_fd = angle_fr * 57.29578;
+		glRotatef(angle_fd, ax_f.getX(), ax_f.getY(), ax_f.getZ());
+		// 将上向向量转为一致
+		u2 = rotate(default_upper, ax_f, angle_fr);
+		//cout << u2<<' '<<u << endl;
+	}
+	else
+	{
+		u2 = u;
+	}
+
+	//Vec ax_u = cross(u2,u);
+	Vec ax_u = default_forward;
+	GLfloat angle_ur = angle(u2, u);
+	//cout << ax_u << "  " << angle_ur * 57.29578 << endl;
+	glRotatef(angle_ur*57.29578, ax_u.getX(), ax_u.getY(), ax_u.getZ());
+}
+
+void Object::translation()
+{
+	// 平移
+	glTranslatef(pos.getX(), pos.getY(), pos.getZ());
 }
