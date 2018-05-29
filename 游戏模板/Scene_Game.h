@@ -4,6 +4,7 @@
 #include "GameObject.h"
 #include "LightSource.h"
 #include "Assembly.h"
+#include <math.h>
 class Scene_Game :
 	public Scene
 {

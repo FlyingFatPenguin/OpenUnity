@@ -74,6 +74,26 @@ int Object::setUpper(Vec upper)
 	return 0;
 }
 
+void Object::move(const Vec& vec)
+{
+	pos = pos + vec;
+	upper = upper + vec;
+	forward = forward + vec;
+}
+
+void Object::moveto(const Vec& target_pos)
+{
+	Vec vec = target_pos - pos;
+	pos = target_pos;
+	forward = forward + vec;
+	upper = upper + vec;
+}
+
+void Object::set_default_forward(Vec default_forward)
+{
+	this->default_forward = default_forward;
+}
+
 void Object::rotation()
 {
 	// Ðý×ª

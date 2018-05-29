@@ -21,6 +21,11 @@ public:
 	virtual int setPos(Vec pos);
 	virtual int setForward(Vec forward);
 	virtual int setUpper(Vec upper);
+	// 移动函数，参数为移动的方向
+	virtual void move(const Vec& vec);
+	// 移动函数，参数为移动的目的地
+	virtual void moveto(const Vec& target_pos);
+	void set_default_forward(Vec default_forward);
 protected:
 	void rotation();
 	void translation();
@@ -29,7 +34,7 @@ protected:
 	Vec upper;//上方
 
 	//默认方向
-	const Vec default_forward;
-	const Vec default_upper;
+	Vec default_forward;
+	Vec default_upper;
 };
 
