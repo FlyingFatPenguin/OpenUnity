@@ -3,6 +3,7 @@
 #include "全局数据.h"
 #include "GameObject.h"
 #include "LightSource.h"
+#include "Assembly.h"
 class Scene_Game :
 	public Scene
 {
