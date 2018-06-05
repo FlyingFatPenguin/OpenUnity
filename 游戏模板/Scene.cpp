@@ -27,7 +27,7 @@ void Scene::display()
 {	
 	// 使用了两次绘制的方法来解决可能出现的透明物体的问题
 	//将来还可以使用返回值对其进行优化处理
-	
+	mut.lock();
 	// 启动物品的特殊功能
 	for (list<Object*>::iterator o = objectlist.begin(); o != objectlist.end(); o++)
 	{
@@ -48,6 +48,7 @@ void Scene::display()
 	{
 		(*c)->display();
 	}
+	mut.unlock();
 }
 
 void Scene::idle()
@@ -67,10 +68,14 @@ void Scene::keyEvent(unsigned char key, int x, int y)
 {
 }
 
-void Scene::addObject(Object* obj)
+Object* Scene::addObject(Object* obj)
 {
 	// 传递指针可以保证传递的效率，用于多层次传递
 	// 而使用复制构造函数生成一个新对象，可以保证安全
 	// 不直接使用指针所指向的外界的对象可以避免外界持有内部对象的指针
-	objectlist.push_back(obj->clone());
+	mut.lock();
+	Object* myobj = obj->clone();
+	objectlist.push_back(myobj);
+	mut.unlock();
+	return myobj;
 }

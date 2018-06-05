@@ -61,6 +61,9 @@
     <Filter Include="源文件\物体\组合体">
       <UniqueIdentifier>{bf9ec4bb-fe06-4d91-b9a2-9d4a7f746552}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\物体\游戏物体\立方体">
+      <UniqueIdentifier>{8a30d88e-fbc1-4d35-b286-57d95ad2c587}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">

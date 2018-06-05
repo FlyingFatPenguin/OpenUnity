@@ -19,5 +19,6 @@ private:
 	GLenum getDisableLight();
 
 	Light light;
+	GLenum lightnum;
 };
 

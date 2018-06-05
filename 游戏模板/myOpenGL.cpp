@@ -3,9 +3,9 @@
 extern Scene* scene;
 void myDisplay(void)
 {
-	glEnable(GL_DEPTH_TEST);
 	glClearColor(0.1, 0.4, 1, 1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	glEnable(GL_DEPTH_TEST);
 
 	scene->display();
 
@@ -59,13 +59,25 @@ void start()
 	scene = &game;
 }
 
+void updateTime()
+{
+	while (TRUE)
+	{
+		extern clock_t current_time;
+		current_time = clock();
+		Sleep(50);
+	}
+}
 int myOpenGLmain(int argc, char * argv[])
 {
 	extern int WIN_POS_X;
 	extern int WIN_POS_Y;
 	extern int WIN_WIDTH;
 	extern int WIN_HEIGHT;
-
+	extern clock_t start_time;
+	start_time = clock();
+	thread t(updateTime);
+	t.detach();
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
 	glutInitWindowPosition(WIN_POS_X, WIN_POS_Y);

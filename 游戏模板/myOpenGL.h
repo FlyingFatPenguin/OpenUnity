@@ -3,6 +3,8 @@
 #include <Windows.h>
 #include "全局数据.h"
 #include "Scene.h"
+#include <time.h>
+#include <thread>
 int myOpenGLmain(int argc, char * argv[]);
 
 /****************

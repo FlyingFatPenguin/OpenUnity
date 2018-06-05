@@ -5,6 +5,8 @@
 #include "LightSource.h"
 #include "Assembly.h"
 #include <math.h>
+#include <thread>
+using namespace std;
 class Scene_Game :
 	public Scene
 {

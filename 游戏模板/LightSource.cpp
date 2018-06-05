@@ -2,7 +2,8 @@
 
 
 
-LightSource::LightSource()
+LightSource::LightSource():
+	lightnum(0)
 {
 }
 
@@ -13,13 +14,15 @@ LightSource::~LightSource()
 
 void LightSource::use()
 {
-	GLenum lightnum = getDisableLight();
+	if(lightnum == 0)
+		lightnum = getDisableLight();
 
 	GLfloat p[4] = { pos.getX(),pos.getY(),pos.getZ()};
 	//// 平行光源
-	//p[3] = 1;
+	//p[3] = 0;
 	// 点光源
-	p[3] = 0;
+	p[3] = 1;
+
 	glLightfv(lightnum, GL_POSITION, p);
 	light.use(lightnum);
 	glEnable(lightnum);
