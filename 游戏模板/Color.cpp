@@ -23,7 +23,7 @@ void Color::material(GLenum face, GLenum pname)
 
 void Color::light(GLenum face, GLenum pname)
 {
-	glMaterialfv(GL_FRONT, GL_DIFFUSE, rgba);
+	glLightfv(face, pname, rgba);
 }
 
 void Color::setRGBA(GLfloat r, GLfloat g, GLfloat b, GLfloat a)

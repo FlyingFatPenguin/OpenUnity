@@ -91,7 +91,7 @@ void create_building(Scene* scene)
 	wall.set_default_forward(Vec(0.35, 1, 0));
 
 
-	/*for (int i = 0; i < 8; i++)
+	for (int i = 0; i < 8; i++)
 	{
 		double r = 1.5;
 		double pi = 3.14159;
@@ -109,7 +109,7 @@ void create_building(Scene* scene)
 		Sleep(500);
 	}
 
-	scene->addObject(&building);*/
+	scene->addObject(&building);
 
 }
 Scene_Game::Scene_Game()
