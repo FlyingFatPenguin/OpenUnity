@@ -168,4 +168,9 @@
       <Filter>源文件\物体\组合体</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Rotation.txt">
+      <Filter>源文件\物体</Filter>
+    </Text>
+  </ItemGroup>
 </Project>

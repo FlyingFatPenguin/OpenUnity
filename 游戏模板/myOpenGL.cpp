@@ -1,5 +1,24 @@
 #include "myOpenGL.h"
 
+double CalFrequency()
+{
+	//测量帧数
+	static int count;
+	static double save;
+	static clock_t last, current;
+	double timegap;
+
+	++count;
+	if (count <= 50)
+		return save;
+	count = 0;
+	last = current;
+	current = clock();
+	timegap = (current - last) / (double)CLK_TCK;
+	save = 50.0 / timegap;
+	return save;
+}
+
 extern Scene* scene;
 void myDisplay(void)
 {
@@ -13,10 +32,13 @@ void myDisplay(void)
 }
 void myIdle(void)
 {
-	Sleep(5);
+	//Sleep(5);
 	scene->idle();
 	myDisplay();
+	cout << CalFrequency() << endl;
 }
+
+
 void ChangeSize(int width, int height)//获知窗口大小
 {
 	extern int WIN_WIDTH;

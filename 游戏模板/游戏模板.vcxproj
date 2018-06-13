@@ -151,6 +151,9 @@
     <ClInclude Include="Vec.h" />
     <ClInclude Include="全局数据.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Rotation.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

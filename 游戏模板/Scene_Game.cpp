@@ -16,17 +16,25 @@ void rotateEvent(Object* obj)
 void create_building(Scene* scene)
 {
 	LightSource ls;
-	ls.setPos(Vec(10, 10, 10));
+	ls.setPos(Vec(5, 5, 0));
 	LightSource* pls = dynamic_cast<LightSource*>(scene->addObject(&ls));
-	thread t1(rotateEvent, pls);
-	t1.detach();
+	ls.setPos(Vec(-5, -5, 0));
+	scene->addObject(&ls);
+	/*thread t1(rotateEvent, pls);
+	t1.detach();*/
+
+	GameObject lt;
+	lt.setPos(Vec(5, 5, 0));
+	scene->addObject(&lt);
+	lt.setPos(Vec(-5, -5, 0));
+	scene->addObject(&lt);
 	
 	Camera c;
 	c.setPos(Vec(0, 5, 5));
 	c.setUpper(Vec(0, 0, 1e6));
 	Camera* pc = dynamic_cast<Camera*>(scene->addObject(&c));
-	/*thread t2(rotateEvent,pc);
-	t2.detach();*/
+	thread t2(rotateEvent,pc);
+	t2.detach();
 
 	
 	//GameObject go;
@@ -101,12 +109,12 @@ void create_building(Scene* scene)
 		scene->addObject(&wall);
 		Sleep(500);
 	}
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 20; i++)
 	{
 		floor.move(Vec(0, 0, 1.5));
 		building.addObject(&floor);
 		scene->addObject(&floor);
-		Sleep(500);
+		//Sleep(500);
 	}
 
 	scene->addObject(&building);

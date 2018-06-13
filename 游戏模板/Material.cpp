@@ -4,11 +4,11 @@
 
 Material::Material()
 {
-	sun_mat_ambient.setRGBA(0.2, 0.5, 0.2, 1);
-	sun_mat_diffuse.setRGBA(0.2, 0.5, 0.2, 1);
-	sun_mat_specular.setRGBA(0.9, 0.9, 0.9, 1);
-	sun_mat_emission.setRGBA(0.1,0.1,0.1,1);
-	sun_mat_shininess = 30;
+	sun_mat_ambient.setRGBA(0.250000, 0.250000, 0.250000, 1.000000);
+	sun_mat_diffuse.setRGBA(0.400000, 0.400000, 0.400000, 1.000000);
+	sun_mat_specular.setRGBA(0.774597, 0.774597, 0.774597, 1.000000);
+	//sun_mat_emission.setRGBA(0.2,0.2,0.2,1);
+	sun_mat_shininess = 76.800003;
 }
 
 

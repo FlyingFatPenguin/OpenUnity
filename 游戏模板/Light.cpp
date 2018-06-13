@@ -5,8 +5,8 @@
 Light::Light()
 {
 	light_ambient = Color(1, 1, 1, 1);
-	light_diffuse = Color(1, 0, 0, 1);
-	light_specular = Color(1, 0, 0, 1);
+	light_diffuse = Color(1, 1, 1, 1);
+	light_specular = Color(1, 1, 1, 1);
 }
 
 
