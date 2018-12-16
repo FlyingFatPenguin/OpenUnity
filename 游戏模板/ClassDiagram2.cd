@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Scene" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAABAhAAAAQAAAgAAEAAAAQAEAAAgBAAAAAAAAAAA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene_Game" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Scene_Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Control" Collapsed="true">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAFAAAAAAAAAAAAAAAAAAEAAAEgQAgAAAEAAAA=</HashCode>
+      <FileName>Control.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Color" Collapsed="true">
+    <Position X="12.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAQAAAAAAAAIQAAAABAAAgABAAAA=</HashCode>
+      <FileName>Color.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Vec" Collapsed="true">
+    <Position X="14" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAIAAAAAAAAAAAAAAAAAAABABgAWABAAA=</HashCode>
+      <FileName>Vec.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Object" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIACAhCAAQIAQACgAACAAIABACEAABgABAIAEQQAAAA=</HashCode>
+      <FileName>Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Camera" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAAAQAAAAAAYQAAAAAAAAAEAAAAABAAAEAAAAAA=</HashCode>
+      <FileName>Camera.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LightSource" Collapsed="true">
+    <Position X="9.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAIAAMIAAAABAABEAAAAAA=</HashCode>
+      <FileName>LightSource.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameObject" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAEAJAAAA=</HashCode>
+      <FileName>GameObject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Assembly" Collapsed="true">
+    <Position X="3" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAkAAAAAAEAAIABAAAAEAAAAAA=</HashCode>
+      <FileName>Assembly.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Material" Collapsed="true">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAIAAAAEAAAAAAAQAAgAAAAAAAAABAAAAAACAAg=</HashCode>
+      <FileName>Material.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Light" Collapsed="true">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAACAQAAIAgAAAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>Light.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

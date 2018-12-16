@@ -128,6 +128,7 @@
     <ClCompile Include="myOpenGL.cpp" />
     <ClCompile Include="Object.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="Scene2.cpp" />
     <ClCompile Include="Scene_Game.cpp" />
     <ClCompile Include="Vec.cpp" />
     <ClCompile Include="全局数据.cpp" />
@@ -147,12 +148,16 @@
     <ClInclude Include="myOpenGL.h" />
     <ClInclude Include="Object.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="Scene2.h" />
     <ClInclude Include="Scene_Game.h" />
     <ClInclude Include="Vec.h" />
     <ClInclude Include="全局数据.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Rotation.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -13,7 +13,7 @@ void rotateEvent(Object* obj)
 		Sleep(30);
 	}
 }
-void create_building(Scene* scene)
+void createBuilding(Scene* scene)
 {
 	LightSource ls;
 	ls.setPos(Vec(5, 5, 0));
@@ -122,7 +122,7 @@ void create_building(Scene* scene)
 }
 Scene_Game::Scene_Game()
 {
-	thread t(create_building,this);
+	thread t(createBuilding,this);
 	t.detach();
 
 	//Camera camera;

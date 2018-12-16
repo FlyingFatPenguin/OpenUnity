@@ -117,6 +117,9 @@
     <ClCompile Include="Assembly.cpp">
       <Filter>源文件\物体\组合体</Filter>
     </ClCompile>
+    <ClCompile Include="Scene2.cpp">
+      <Filter>源文件\场景\游戏场景</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -167,10 +170,16 @@
     <ClInclude Include="Assembly.h">
       <Filter>源文件\物体\组合体</Filter>
     </ClInclude>
+    <ClInclude Include="Scene2.h">
+      <Filter>源文件\场景\游戏场景</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Rotation.txt">
       <Filter>源文件\物体</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
 </Project>

@@ -11,7 +11,10 @@ public:
 	~GameObject();
 	// 返回一个类型一致的指针
 	virtual Object* clone();
-private:
+
+public:
+	// 物体的材质
 	Material material;
+private:
 };
 

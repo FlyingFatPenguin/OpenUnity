@@ -35,6 +35,16 @@ void Vec::use()
 	glVertex3f(x,y,z);
 }
 
+void Vec::rotated(const Vec & axis, GLfloat angle)
+{
+	Vec ans = rotate(*this, axis, angle);
+	x = ans.x;
+	y = ans.y;
+	z = ans.z;
+}
+
+
+
 
 
 //void Vec::display()

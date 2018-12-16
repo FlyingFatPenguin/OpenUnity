@@ -74,6 +74,11 @@ int Object::setUpper(Vec upper)
 	return 0;
 }
 
+Vec Object::getPos()
+{
+	return pos;
+}
+
 void Object::move(const Vec& vec)
 {
 	pos = pos + vec;

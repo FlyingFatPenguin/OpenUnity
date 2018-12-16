@@ -12,6 +12,8 @@ public:
 	GLfloat getY() const;
 	GLfloat getZ() const;
 	void use();
+	// 绕 axis 旋转 angle 度
+	void rotated(const Vec& axis, GLfloat angle);
 	//void display();
 	~Vec();
 private:
@@ -36,8 +38,9 @@ Vec cross(const Vec& a, const Vec& b);
 // 模长
 GLfloat length(const Vec& a);
 // 旋转
+// target 向量绕 axis 向量旋转 angle 度
 Vec rotate(const Vec& target, const Vec& axis, GLfloat angle);
 // 夹角
 GLfloat angle(const Vec& a,const Vec& b);
-//测试文件
+// 测试函数
 int test_vec();

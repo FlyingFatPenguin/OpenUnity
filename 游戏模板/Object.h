@@ -18,9 +18,11 @@ public:
 	virtual void use();
 	// 返回一个类型一致的指针
 	virtual Object* clone();
+	// 设置位置
 	virtual int setPos(Vec pos);
 	virtual int setForward(Vec forward);
 	virtual int setUpper(Vec upper);
+	Vec getPos();
 	// 移动函数，参数为移动的方向
 	virtual void move(const Vec& vec);
 	// 移动函数，参数为移动的目的地

@@ -19,21 +19,21 @@ double CalFrequency()
 	return save;
 }
 
-extern Scene* scene;
+extern Scene* current_scene;
 void myDisplay(void)
 {
 	glClearColor(0.1, 0.4, 1, 1);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	glEnable(GL_DEPTH_TEST);
 
-	scene->display();
+	current_scene->display();
 
 	glutSwapBuffers();
 }
 void myIdle(void)
 {
 	//Sleep(5);
-	scene->idle();
+	current_scene->idle();
 	myDisplay();
 	cout << CalFrequency() << endl;
 }
@@ -46,7 +46,7 @@ void ChangeSize(int width, int height)//获知窗口大小
 
 	WIN_WIDTH = width;
 	WIN_HEIGHT = height;
-	scene->changeSize(width, height);
+	current_scene->changeSize(width, height);
 }
 void mouseCB(int button, int state, int wx, int wy)
 {
@@ -54,7 +54,7 @@ void mouseCB(int button, int state, int wx, int wy)
 	/*GLfloat x = (2.0 * wx)/WIN_WIDTH - 1;
 	GLfloat y = -(2.0 * wy)/WIN_HEIGHT + 1;*/
 
-	scene->mouseCB(button, state, wx, wy);
+	current_scene->mouseCB(button, state, wx, wy);
 }
 void keyEvent(unsigned char key, int x, int y)
 {
@@ -64,7 +64,7 @@ void keyEvent(unsigned char key, int x, int y)
 		exit(0);
 		return;
 	default:
-		scene->keyEvent(key, x, y);
+		current_scene->keyEvent(key, x, y);
 	}
 }
 void mouseMove(int x, int y)
@@ -78,7 +78,7 @@ void processMousePassiveMotion(int x, int y)
 void start()
 {
 	static Scene game;
-	scene = &game;
+	current_scene = &game;
 }
 
 void updateTime()
@@ -115,7 +115,7 @@ int myOpenGLmain(int argc, char * argv[])
 	glutMotionFunc(&mouseMove);
 	//未按下按键时的鼠标位置
 	glutPassiveMotionFunc(processMousePassiveMotion);
-	if (scene == 0)
+	if (current_scene == 0)
 		return 1;
 	glutMainLoop();
 	return 0;
