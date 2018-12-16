@@ -109,7 +109,7 @@ void create_building(Scene* scene)
 		scene->addObject(&wall);
 		Sleep(500);
 	}
-	for (int i = 0; i < 20; i++)
+	for (int i = 0; i < 2; i++)
 	{
 		floor.move(Vec(0, 0, 1.5));
 		building.addObject(&floor);
