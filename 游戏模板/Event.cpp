@@ -74,8 +74,16 @@ void Event::addSubevent(Event * event)
 {
 	if (event)
 	{
-		//event->setScene(this->scene);
 		subeventList.push_back(event);
+	}
+}
+
+void Event::addSubeventClone(Event * event)
+{
+	if (event)
+	{
+		//event->setScene(this->scene);
+		subeventList.push_back(event->clone());
 	}
 }
 

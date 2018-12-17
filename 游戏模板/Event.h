@@ -36,8 +36,10 @@ public:
 	// 更新
 	void update();
 
-	// 添加子事件 深复制
+	// 添加子事件（直接使用传入的对象）
 	void addSubevent(Event* event);
+	// 添加子事件（生成新对象）
+	void addSubeventClone(Event* event);
 
 private:
 	// 初始化，当第一次启动时调用
