@@ -11,6 +11,17 @@ Event::Event()
 	//scene = NULL;
 }
 
+Event::Event(const Event & event)
+{
+	this->subeventList = list<Event*>(event.subeventList);
+	this->eventType = event.eventType;
+	for (list<Event*>::iterator i = subeventList.begin();
+		i != subeventList.end(); i++)
+	{
+		(*i) = (*i)->clone();
+	}
+}
+
 
 Event::~Event()
 {
@@ -121,4 +132,9 @@ void Event::updateSubevent()
 	{
 		(*e)->update();
 	}
+}
+
+Event * Event::clone()
+{
+	return new Event(*this);
 }

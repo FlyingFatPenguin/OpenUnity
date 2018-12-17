@@ -35,7 +35,7 @@ void myIdle(void)
 	//Sleep(5);
 	current_scene->idle();
 	myDisplay();
-	cout << CalFrequency() << endl;
+	//cout << CalFrequency() << endl;
 }
 
 

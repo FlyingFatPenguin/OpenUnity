@@ -76,6 +76,9 @@
     <Filter Include="源文件\事件\时间线">
       <UniqueIdentifier>{be0484de-b562-47bb-bd75-6b51ca5a8da1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\事件\Event测试类">
+      <UniqueIdentifier>{8ff7c4a9-46c0-4c7e-9710-68fb658c7616}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Scene.cpp">
@@ -138,6 +141,9 @@
     <ClCompile Include="源.cpp">
       <Filter>主程序</Filter>
     </ClCompile>
+    <ClCompile Include="EventTest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -196,6 +202,9 @@
     </ClInclude>
     <ClInclude Include="TimeLine.h">
       <Filter>源文件\事件\时间线</Filter>
+    </ClInclude>
+    <ClInclude Include="EventTest.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

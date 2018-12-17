@@ -21,6 +21,7 @@ class Event
 // 方法
 public:
 	Event();
+	Event(const Event& event);
 	~Event();
 	// 设置相应场景
 	//void setScene(Scene* scene);
@@ -35,7 +36,7 @@ public:
 	// 更新
 	void update();
 
-	// 添加子事件
+	// 添加子事件 深复制
 	void addSubevent(Event* event);
 
 private:
@@ -57,6 +58,8 @@ private:
 	// 更新子事件
 	void updateSubevent();
 
+	// 克隆函数
+	virtual Event* clone();
 // 数据
 protected:
 	// 存放子事件

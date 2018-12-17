@@ -121,6 +121,7 @@
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="drawCNstring.cpp" />
     <ClCompile Include="Event.cpp" />
+    <ClCompile Include="EventTest.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="LightSource.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Control.h" />
     <ClInclude Include="drawCNstring.h" />
     <ClInclude Include="Event.h" />
+    <ClInclude Include="EventTest.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightSource.h" />
