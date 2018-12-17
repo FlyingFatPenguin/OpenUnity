@@ -49,6 +49,10 @@ void Event::update()
 
 void Event::addSubevent(Event * event)
 {
+	if (event)
+	{
+		subeventList.push_back(event);
+	}
 }
 
 void Event::firstStart()

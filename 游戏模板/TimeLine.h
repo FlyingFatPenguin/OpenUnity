@@ -5,13 +5,16 @@
 #include "Event.h"
 using namespace std;
 
-class TimeLine
+class TimeLine:
+	public Event
 {
 public:
 	TimeLine();
 	~TimeLine();
-	// 启动故事
-	void begin();
+	// 启动时，创建并启动线程
+	virtual void whenStart();
+	// 阻塞时终止线程
+	//virtual void whenBlock();
 protected:
 	// 创建线程
 	void threadBegin();

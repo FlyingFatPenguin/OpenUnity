@@ -4,7 +4,6 @@
 
 TimeLine::TimeLine()
 {
-	timeLineThread = thread(&TimeLine::threadRun, this);
 }
 
 
@@ -12,10 +11,12 @@ TimeLine::~TimeLine()
 {
 }
 
-void TimeLine::begin()
+void TimeLine::whenStart()
 {
-	
+	timeLineThread = thread(&TimeLine::threadRun, this);
+	threadBegin();
 }
+
 
 void TimeLine::threadBegin()
 {
@@ -24,7 +25,5 @@ void TimeLine::threadBegin()
 
 void TimeLine::threadRun()
 {
-	while (true) {
-		
-	}
+	
 }
