@@ -51,7 +51,7 @@ private:
 	// 判断是否更新
 	// 可以更新就返回 true
 	// 不可以更新就返回 false
-	bool CanUpdate();
+	bool ifUpdate();
 	// 更新子事件
 	void updateSubevent();
 

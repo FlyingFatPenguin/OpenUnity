@@ -36,7 +36,7 @@ void Event::update()
 {
 	// 判断该事件是否需要更新
 	// 启动 且 没有暂停
-	if (!CanUpdate()) {
+	if (!ifUpdate()) {
 		return;
 	}
 
@@ -82,10 +82,15 @@ void Event::stop()
 	eventType = EventType::DEAD;
 }
 
-bool Event::CanUpdate()
+bool Event::ifUpdate()
 {
-
-	return false;
+	if (eventType == EventType::RUNNING)
+	{
+		return true;
+	}
+	else {
+		return false;
+	}
 }
 
 void Event::whenUpdate()

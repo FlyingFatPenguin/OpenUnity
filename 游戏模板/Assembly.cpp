@@ -35,3 +35,8 @@ Object * Assembly::clone()
 {
 	return new Assembly(*this);
 }
+
+Object* Assembly::getFirstObject()
+{
+	return *(objectlist.begin());
+}

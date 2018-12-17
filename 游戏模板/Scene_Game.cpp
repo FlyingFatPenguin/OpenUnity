@@ -107,8 +107,11 @@ void createBuilding(Scene* scene)
 		wall.setPos(Vec(r*cos(i*pi / 4), r*sin(i / 4.0 * pi), 0));
 		floor.addObject(&wall);
 		scene->addObject(&wall);
-		Sleep(500);
+		//Sleep(500);
 	}
+
+	building.addObject(&floor);
+
 	for (int i = 0; i < 2; i++)
 	{
 		floor.move(Vec(0, 0, 1.5));
@@ -117,8 +120,11 @@ void createBuilding(Scene* scene)
 		//Sleep(500);
 	}
 
-	scene->addObject(&building);
+	//building.move(Vec(5,0,0));
+	//scene->addObject(&building);
 
+	Assembly* obj = dynamic_cast<Assembly*>(wall.getFirstObject());
+	(obj->getFirstObject())->move(Vec(1,1,1));
 }
 Scene_Game::Scene_Game()
 {

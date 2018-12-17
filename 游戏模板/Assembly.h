@@ -13,6 +13,7 @@ public:
 	virtual void display();
 	virtual void addObject(Object* obj);
 	virtual Object* clone();
+	Object* getFirstObject();
 protected:
 	list<Object*> objectlist;
 };

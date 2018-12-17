@@ -9,7 +9,7 @@
 
 int main(int argc, char * argv[])
 {
-	Scene* scene = new Scene2();
+	Scene* scene = new Scene_Game();
 	TimeLine* timeLine = new TimeLine();
 	myOpenGLmain(argc, argv, scene);
 	delete scene;	

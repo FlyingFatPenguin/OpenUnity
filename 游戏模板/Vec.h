@@ -6,7 +6,7 @@ using namespace std;
 class Vec
 {
 public:
-	//按坐标的构造函数
+	//按坐标的构造函数 explicit禁止隐式转换
 	explicit Vec(GLfloat x = 0, GLfloat y = 0, GLfloat z = 0);
 	GLfloat getX() const;
 	GLfloat getY() const;
