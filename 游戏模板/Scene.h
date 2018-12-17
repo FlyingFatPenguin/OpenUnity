@@ -12,6 +12,8 @@ class Scene
 public:
 	Scene();
 	~Scene();
+	// ≥°æ∞≥ı ºªØ
+	virtual void init();
 	virtual void display();
 	virtual void idle();
 	virtual void changeSize(int width, int height);

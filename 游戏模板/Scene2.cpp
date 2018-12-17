@@ -1,6 +1,6 @@
 #include "Scene2.h"
 
-// obj对象绕 center 以 (0，0，1) 为轴旋转
+// obj 对象绕 center 以 (0，0，1) 为轴旋转
 void rotateEvent(Object* obj, Vec center)
 {
 	extern clock_t current_time;

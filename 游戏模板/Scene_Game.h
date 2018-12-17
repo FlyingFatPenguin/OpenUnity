@@ -7,6 +7,7 @@
 #include <math.h>
 #include <thread>
 using namespace std;
+
 class Scene_Game :
 	public Scene
 {

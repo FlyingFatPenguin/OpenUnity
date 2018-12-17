@@ -64,6 +64,15 @@
     <Filter Include="源文件\物体\游戏物体\立方体">
       <UniqueIdentifier>{8a30d88e-fbc1-4d35-b286-57d95ad2c587}</UniqueIdentifier>
     </Filter>
+    <Filter Include="文档">
+      <UniqueIdentifier>{92915a85-a439-4934-b818-1dd6aac81ba0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\事件">
+      <UniqueIdentifier>{05633659-9fd6-4256-a806-eb2f560cb6e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\时间线">
+      <UniqueIdentifier>{be0484de-b562-47bb-bd75-6b51ca5a8da1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="源.cpp">
@@ -120,6 +129,12 @@
     <ClCompile Include="Scene2.cpp">
       <Filter>源文件\场景\游戏场景</Filter>
     </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>源文件\事件</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLine.cpp">
+      <Filter>源文件\时间线</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene.h">
@@ -173,10 +188,22 @@
     <ClInclude Include="Scene2.h">
       <Filter>源文件\场景\游戏场景</Filter>
     </ClInclude>
+    <ClInclude Include="Event.h">
+      <Filter>源文件\事件</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLine.h">
+      <Filter>源文件\时间线</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Rotation.txt">
       <Filter>源文件\物体</Filter>
+    </Text>
+    <Text Include="待完成事项.txt">
+      <Filter>文档</Filter>
+    </Text>
+    <Text Include="日志.txt">
+      <Filter>文档</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>

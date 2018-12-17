@@ -90,21 +90,25 @@ void updateTime()
 		Sleep(50);
 	}
 }
-int myOpenGLmain(int argc, char * argv[])
+
+int myOpenGLmain(int argc, char * argv[], Scene* scene)
 {
 	extern int WIN_POS_X;
 	extern int WIN_POS_Y;
 	extern int WIN_WIDTH;
 	extern int WIN_HEIGHT;
+
 	extern clock_t start_time;
 	start_time = clock();
 	thread t(updateTime);
 	t.detach();
+
 	glutInit(&argc, argv);
 	glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE);
 	glutInitWindowPosition(WIN_POS_X, WIN_POS_Y);
 	glutInitWindowSize(WIN_WIDTH, WIN_HEIGHT);
 	glutCreateWindow("OpenGL 窗口");
+
 	glutDisplayFunc(&myDisplay);
 	glutIdleFunc(&myIdle);
 	glutReshapeFunc(&ChangeSize);
@@ -115,8 +119,10 @@ int myOpenGLmain(int argc, char * argv[])
 	glutMotionFunc(&mouseMove);
 	//未按下按键时的鼠标位置
 	glutPassiveMotionFunc(processMousePassiveMotion);
-	if (current_scene == 0)
+
+	if (scene == 0)
 		return 1;
+	current_scene = scene;
 	glutMainLoop();
 	return 0;
 }

@@ -17,8 +17,11 @@ void Object::display()
 {
 	glPushMatrix();
 	{
+		// 将物体的位置设置好，包括移动，旋转
 		translation();
 		rotation();
+
+		// 绘制物体本身
 		glColor3f(0.2, 0.7, 0.3);
 		glutSolidCube(0.5);
 		glColor3f(0, 0, 0);
@@ -30,6 +33,7 @@ void Object::display()
 void Object::display2()
 {
 }
+
 
 void Object::idle()
 {

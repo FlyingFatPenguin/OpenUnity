@@ -5,7 +5,7 @@
 #include "Scene.h"
 #include <time.h>
 #include <thread>
-int myOpenGLmain(int argc, char * argv[]);
+int myOpenGLmain(int argc, char * argv[], Scene* scene);
 
 /****************
 该文件的作用是提供一个面向过程到面向对象的接口

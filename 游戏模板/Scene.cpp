@@ -23,6 +23,10 @@ Scene::~Scene()
 	controlList.clear();
 }
 
+void Scene::init()
+{
+}
+
 void Scene::display()
 {	
 	// 使用了两次绘制的方法来解决可能出现的透明物体的问题

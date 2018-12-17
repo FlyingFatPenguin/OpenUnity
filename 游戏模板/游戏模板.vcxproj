@@ -120,6 +120,7 @@
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Control.cpp" />
     <ClCompile Include="drawCNstring.cpp" />
+    <ClCompile Include="Event.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="Light.cpp" />
     <ClCompile Include="LightSource.cpp" />
@@ -130,6 +131,7 @@
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Scene2.cpp" />
     <ClCompile Include="Scene_Game.cpp" />
+    <ClCompile Include="TimeLine.cpp" />
     <ClCompile Include="Vec.cpp" />
     <ClCompile Include="全局数据.cpp" />
     <ClCompile Include="源.cpp" />
@@ -140,6 +142,7 @@
     <ClInclude Include="Color.h" />
     <ClInclude Include="Control.h" />
     <ClInclude Include="drawCNstring.h" />
+    <ClInclude Include="Event.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="Light.h" />
     <ClInclude Include="LightSource.h" />
@@ -150,11 +153,14 @@
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Scene2.h" />
     <ClInclude Include="Scene_Game.h" />
+    <ClInclude Include="TimeLine.h" />
     <ClInclude Include="Vec.h" />
     <ClInclude Include="全局数据.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="Rotation.txt" />
+    <Text Include="待完成事项.txt" />
+    <Text Include="日志.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram2.cd" />
