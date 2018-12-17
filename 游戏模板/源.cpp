@@ -9,8 +9,10 @@
 
 int main(int argc, char * argv[])
 {
-	Scene* scene = new Scene_Game();
+	Scene* scene = new Scene();
 	TimeLine* timeLine = new TimeLine();
+	//timeLine->addSubevent();
+	timeLine->start();
 	myOpenGLmain(argc, argv, scene);
 	delete scene;	
 }

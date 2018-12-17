@@ -7,6 +7,8 @@ Event::Event()
 	subeventList = list<Event*>();
 	// 设置状态为初始化
 	eventType = EventType::NEW;
+	// 设置场景为空
+	//scene = NULL;
 }
 
 
@@ -14,21 +16,31 @@ Event::~Event()
 {
 }
 
+//void Event::setScene(Scene * scene)
+//{
+//	this->scene = scene;
+//	for (list<Event*>::iterator e = subeventList.begin();
+//		e != subeventList.end(); e++)
+//	{
+//		(*e)->setScene(this->scene);
+//	}
+//}
+
 // 启动事件
 // 包括 第一次启动 和 阻塞后 启动
 void Event::start()
 {
 	if (eventType == EventType::NEW)
 	{
+		eventType = EventType::RUNNING;
 		// 新创建
 		firstStart();
 		whenStart();
-		eventType = EventType::RUNNING;
 	}
 	else if (eventType == EventType::BLOCKED)
 	{
-		whenStart();
 		eventType = EventType::RUNNING;
+		whenStart();
 	}
 }
 
@@ -51,6 +63,7 @@ void Event::addSubevent(Event * event)
 {
 	if (event)
 	{
+		//event->setScene(this->scene);
 		subeventList.push_back(event);
 	}
 }
@@ -75,15 +88,15 @@ void Event::block()
 {
 	if (eventType == EventType::RUNNING)
 	{
-		whenBlock();
 		eventType = EventType::BLOCKED;
+		whenBlock();
 	}
 }
 
 void Event::stop()
 {
-	whenStop();
 	eventType = EventType::DEAD;
+	whenStop();
 }
 
 bool Event::ifUpdate()

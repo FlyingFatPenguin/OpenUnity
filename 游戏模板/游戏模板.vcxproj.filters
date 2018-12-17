@@ -70,11 +70,11 @@
     <Filter Include="源文件\事件">
       <UniqueIdentifier>{05633659-9fd6-4256-a806-eb2f560cb6e8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="源文件\时间线">
-      <UniqueIdentifier>{be0484de-b562-47bb-bd75-6b51ca5a8da1}</UniqueIdentifier>
-    </Filter>
     <Filter Include="主程序">
       <UniqueIdentifier>{86f61998-289e-4f0b-b7b7-798df7921a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\事件\时间线">
+      <UniqueIdentifier>{be0484de-b562-47bb-bd75-6b51ca5a8da1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -133,7 +133,7 @@
       <Filter>源文件\事件</Filter>
     </ClCompile>
     <ClCompile Include="TimeLine.cpp">
-      <Filter>源文件\时间线</Filter>
+      <Filter>源文件\事件\时间线</Filter>
     </ClCompile>
     <ClCompile Include="源.cpp">
       <Filter>主程序</Filter>
@@ -195,7 +195,7 @@
       <Filter>源文件\事件</Filter>
     </ClInclude>
     <ClInclude Include="TimeLine.h">
-      <Filter>源文件\时间线</Filter>
+      <Filter>源文件\事件\时间线</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -212,7 +212,7 @@
       <Filter>源文件\myOpenGL</Filter>
     </Text>
     <Text Include="TimeLine.txt">
-      <Filter>源文件\时间线</Filter>
+      <Filter>源文件\事件\时间线</Filter>
     </Text>
     <Text Include="main.txt">
       <Filter>主程序</Filter>

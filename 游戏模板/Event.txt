@@ -46,3 +46,10 @@ Scene中希望外界不能持有内部的指针，
 如当前 RUNNING ,调用 block() 
 whenBlock() 执行的时候 eventType 还是 RUNNING
 以期可以给用户带来更多改变前的信息。
+
+
+v1.0.2
+改了之前的哪个 eventType 修改晚于 when 函数的策略。
+因为继承自 Event 的 TimeLine 需要创建线程
+而创建的线程是需要判断当前的状态的。
+

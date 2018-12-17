@@ -22,6 +22,8 @@ class Event
 public:
 	Event();
 	~Event();
+	// 设置相应场景
+	//void setScene(Scene* scene);
 
 	// 启动
 	void start();
@@ -61,5 +63,7 @@ protected:
 	list<Event*> subeventList;
 	// 当前事件的状态
 	EventType eventType;
+	// 当前操控的场景
+	//Scene* scene;
 };
 

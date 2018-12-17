@@ -25,5 +25,8 @@ void TimeLine::threadBegin()
 
 void TimeLine::threadRun()
 {
-	
+	while (eventType == EventType::RUNNING)
+	{
+		update();
+	}
 }
