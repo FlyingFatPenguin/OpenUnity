@@ -1,0 +1,15 @@
+myOpenGL
+
+由于 C++ 中无法直接给诸如
+glutReshapeFunc(&ChangeSize);
+的函数传递来自类中的指针，这使得要想调用类中的方法
+就只能通过全局变量传递一个指针过去
+并在各函数中调用对应的方法。
+这也就是编写该文件的原因。
+
+v1.0.1
+
+在该文件中实现对 scene 中的函数的分发处理工作
+通过
+int myOpenGLmain(int argc, char * argv[], Scene* scene);
+传入对应的场景，而后自动调用场景里的函数

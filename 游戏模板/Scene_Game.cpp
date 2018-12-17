@@ -123,6 +123,7 @@ void createBuilding(Scene* scene)
 	//building.move(Vec(5,0,0));
 	//scene->addObject(&building);
 
+	// ≤‚ ‘…Ó«≥∏¥÷∆
 	Assembly* obj = dynamic_cast<Assembly*>(wall.getFirstObject());
 	(obj->getFirstObject())->move(Vec(0,0,4));
 }

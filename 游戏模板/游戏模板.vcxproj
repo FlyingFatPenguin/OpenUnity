@@ -158,7 +158,12 @@
     <ClInclude Include="全局数据.h" />
   </ItemGroup>
   <ItemGroup>
+    <Text Include="Event.txt" />
+    <Text Include="main.txt" />
+    <Text Include="myOpenGL.txt" />
     <Text Include="Rotation.txt" />
+    <Text Include="TimeLine.txt" />
+    <Text Include="基本框架.txt" />
     <Text Include="待完成事项.txt" />
     <Text Include="日志.txt" />
   </ItemGroup>

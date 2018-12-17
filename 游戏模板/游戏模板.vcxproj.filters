@@ -73,11 +73,11 @@
     <Filter Include="源文件\时间线">
       <UniqueIdentifier>{be0484de-b562-47bb-bd75-6b51ca5a8da1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="主程序">
+      <UniqueIdentifier>{86f61998-289e-4f0b-b7b7-798df7921a7e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="源.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="Scene.cpp">
       <Filter>源文件\场景</Filter>
     </ClCompile>
@@ -134,6 +134,9 @@
     </ClCompile>
     <ClCompile Include="TimeLine.cpp">
       <Filter>源文件\时间线</Filter>
+    </ClCompile>
+    <ClCompile Include="源.cpp">
+      <Filter>主程序</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +207,21 @@
     </Text>
     <Text Include="日志.txt">
       <Filter>文档</Filter>
+    </Text>
+    <Text Include="myOpenGL.txt">
+      <Filter>源文件\myOpenGL</Filter>
+    </Text>
+    <Text Include="TimeLine.txt">
+      <Filter>源文件\时间线</Filter>
+    </Text>
+    <Text Include="main.txt">
+      <Filter>主程序</Filter>
+    </Text>
+    <Text Include="基本框架.txt">
+      <Filter>文档</Filter>
+    </Text>
+    <Text Include="Event.txt">
+      <Filter>源文件\事件</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
