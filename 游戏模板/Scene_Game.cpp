@@ -124,7 +124,7 @@ void createBuilding(Scene* scene)
 	//scene->addObject(&building);
 
 	Assembly* obj = dynamic_cast<Assembly*>(wall.getFirstObject());
-	(obj->getFirstObject())->move(Vec(1,1,1));
+	(obj->getFirstObject())->move(Vec(0,0,4));
 }
 Scene_Game::Scene_Game()
 {

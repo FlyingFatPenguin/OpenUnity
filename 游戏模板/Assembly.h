@@ -9,6 +9,8 @@ class Assembly :
 {
 public:
 	Assembly();
+	// 修改复制构造函数
+	Assembly(const Assembly& src);
 	~Assembly();
 	virtual void display();
 	virtual void addObject(Object* obj);

@@ -7,6 +7,16 @@ Assembly::Assembly()
 }
 
 
+Assembly::Assembly(const Assembly & src):Object(src)
+{
+	objectlist = list<Object*>(src.objectlist);
+	for (list<Object*>::iterator obj = objectlist.begin();
+		obj!=objectlist.end(); obj++)
+	{
+		*obj = (*obj)->clone();
+	}
+}
+
 Assembly::~Assembly()
 {
 }
