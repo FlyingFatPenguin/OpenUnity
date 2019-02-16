@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "游戏模板", "游戏模板\游戏模板.vcxproj", "{D5C164CC-3A06-4D58-966A-7F0AC0248F69}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenUnity", "OpenUnity\OpenUnity.vcxproj", "{D5C164CC-3A06-4D58-966A-7F0AC0248F69}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
